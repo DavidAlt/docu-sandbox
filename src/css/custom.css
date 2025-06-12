@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* CCL syntax customization 
+    overrides style but not color for original tokens */
+.token.ccl-comment {
+  color: rgb(41, 150, 32); 
+}
+
+.token.ccl-directive {
+  color: grey;
+}
+
+.token.ccl-datatype {
+  color: green;
+  font-weight: bold;
+}
+
+.token.ccl-variable {
+  color: rgb(123, 25, 168);
+}
