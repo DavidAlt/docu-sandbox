@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Code Blocks
 
@@ -27,9 +29,6 @@ WHERE e.active_ind = 1
 LIMIT 30
 ```
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="ccl" label="CCL">
