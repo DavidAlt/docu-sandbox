@@ -5,6 +5,11 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# Sandbox
+
+# Launching the site
+```npm run start```
+
 # Code Blocks
 
 ```jsx title="generic code block"
