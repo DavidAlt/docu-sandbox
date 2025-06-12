@@ -2,46 +2,68 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Code Blocks
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```jsx title="generic code block"
+This is a generic code block
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+```js title="javascript"
+console.log('This is a javascript code block.')
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+```ccl title="CCL"
+SELECT *
+FROM ENCOUNTER e
+PLAN e WHERE e.active_ind = 1
+WITH TIME=30, MAXREC=30, UAR_CODE(D)
+```
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```sql title="Health Analytics"
+SELECT *
+FROM FEDERAL_P0630.ENCOUNTER e
+WHERE e.active_ind = 1
+LIMIT 30
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="ccl" label="CCL">
+
+```ccl
+SELECT *
+FROM ENCOUNTER e
+PLAN e WHERE e.active_ind = 1
+WITH TIME=30, MAXREC=30, UAR_CODE(D)
+```
+
+</TabItem>
+<TabItem value="sql" label="SQL">
+
+```sql
+SELECT *
+FROM FEDERAL_P0630.ENCOUNTER e
+WHERE e.active_ind = 1
+LIMIT 30
+```
+
+</TabItem>
+<TabItem value="java" label="Java">
+
+```java
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+</TabItem>
+</Tabs>
+
+Links:
+ - [Code Blocks](https://docusaurus.io/docs/markdown-features/code-blocks)
